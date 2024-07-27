@@ -1,0 +1,54 @@
+<body>
+    <div class="container">
+        <h3 style="margin: 20px 0px 0px 40px;">DashBoard: resumen ultima semana</h3>
+        <div class="card">
+            <div class="card-header">
+                <mat-grid-list cols="3" rowHeight="100px">
+                    <mat-grid-tile>
+                        <mat-card class="card-info">
+                            <mat-card-header>
+                                <div mat-card-avatar>
+                                    <mat-icon color="accent">payments</mat-icon>
+                                </div>
+                                <mat-card-title>Total Ingresos</mat-card-title>
+                                <mat-card-subtitle>${{totalIngresos}}</mat-card-subtitle>
+                            </mat-card-header>
+                        </mat-card>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-card class="card-info">
+                            <mat-card-header>
+                                <div mat-card-avatar>
+                                    <mat-icon color="warn">sell</mat-icon>
+                                </div>
+                                <mat-card-title>Total Ventas</mat-card-title>
+                                <mat-card-subtitle>{{totalVentas}}</mat-card-subtitle>
+                            </mat-card-header>
+                        </mat-card>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-card class="card-info">
+                            <mat-card-header>
+                                <div mat-card-avatar>
+                                    <mat-icon color="primary">collections_bookmark</mat-icon>
+                                </div>
+                                <mat-card-title>Total Productos</mat-card-title>
+                                <mat-card-subtitle>{{totalProductos}}</mat-card-subtitle>
+                            </mat-card-header>
+                        </mat-card>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="card-content">
+                <mat-card style="margin-top: 15px;">
+                    <mat-card-content>
+                        <div style="width: 90%; height: 300px;">
+                            <canvas id="chartBarras"></canvas>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</body>

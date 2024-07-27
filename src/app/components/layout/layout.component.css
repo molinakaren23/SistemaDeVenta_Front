@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+
+mat-toolbar {
+  position: fixed;
+  background-color:rgb(79, 118, 151);
+  z-index: 2;
+}
+
+.toolbar-title {
+  font-size: 2rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidenav{
+  width: 280px;
+  margin-top: 60px; 
+  background-color: rgb(79, 118, 151);
+  align-items: normal;
+  display: flex;
+}
+
+.sidenav-content {
+  margin-top: 64px;
+  overflow: initial;
+}
+
+.content {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  padding: 10px;
+}
+mat-icon{
+margin-right: 20px;
+}
